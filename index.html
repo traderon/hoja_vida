@@ -2,85 +2,176 @@
 
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Hoja de Vida - Tu Nombre</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f4f4f4;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .section {
-      margin-bottom: 25px;
-    }
-    .contact {
-      font-size: 14px;
-      color: #555;
-    }
-    ul {
-      padding-left: 20px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hoja de Vida - Tu Nombre</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  background: #1e293b;
+  color: white;
+  padding: 30px;
+}
+
+.sidebar h1 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-title {
+  margin-top: 30px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #334155;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 5px 5px 0 0;
+  font-size: 12px;
+}
+
+/* Main content */
+.main {
+  padding: 30px;
+}
+
+.main h2 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.card {
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  margin: 5px 0;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.badge {
+  display: inline-block;
+  background: #e2e8f0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+</style>
+
 </head>
+
 <body>
 
 <div class="container">
-  <h1>Marcelo Candamil</h1>
-  <p class="contact">
-    📧 tuemail@email.com | 📱 +57 XXX XXX XXXX <br>
-    💼 LinkedIn: linkedin.com/in/tuusuario <br>
-    💻 GitHub: github.com/tuusuario
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+    <h1>Tu Nombre</h1>
+    <p>Desarrollador Python & React</p>
+
+```
+<div class="section-title">Contacto</div>
+<p>
+  📧 tuemail@email.com <br>
+  📱 +57 XXX XXX XXXX <br>
+  💼 linkedin.com/in/tuusuario <br>
+  💻 github.com/tuusuario
+</p>
+
+<div class="section-title">Habilidades</div>
+<div class="skills">
+  <span>Python</span>
+  <span>React</span>
+  <span>SQL</span>
+  <span>Git</span>
+  <span>APIs</span>
+</div>
+
+<div class="section-title">Educación</div>
+<p>Ingeniería de Sistemas<br>Universidad X</p>
+```
+
+  </div>
+
+  <!-- Main -->
+
+  <div class="main">
+
+```
+<div class="card">
+  <h2>Perfil Profesional</h2>
+  <p>
+    Desarrollador enfocado en automatización, análisis de datos y desarrollo de aplicaciones web.
+    Experiencia integrando ERPs y construyendo dashboards.
   </p>
+</div>
 
-  <div class="section">
-    <h2>Perfil Profesional</h2>
-    <p>
-      Desarrollador con experiencia en Python y React, enfocado en análisis de datos y automatización de procesos.
-    </p>
-  </div>
+<div class="card">
+  <h2>Experiencia</h2>
+  
+  <h3>Empresa X</h3>
+  <p>Desarrollador | 2023 - Actualidad</p>
+  <ul>
+    <li>Automatización de procesos con Python</li>
+    <li>Desarrollo de dashboards con React</li>
+  </ul>
 
-  <div class="section">
-    <h2>Experiencia</h2>
-    <ul>
-      <li><strong>Empresa X</strong> - Desarrollador (2023 - Actualidad)</li>
-      <li><strong>Empresa Y</strong> - Practicante (2022 - 2023)</li>
-    </ul>
-  </div>
+  <h3>Empresa Y</h3>
+  <p>Practicante | 2022 - 2023</p>
+  <ul>
+    <li>Soporte y mantenimiento de sistemas</li>
+  </ul>
+</div>
 
-  <div class="section">
-    <h2>Educación</h2>
-    <ul>
-      <li>Ingeniería de Sistemas - Universidad X</li>
-    </ul>
-  </div>
+<div class="card">
+  <h2>Proyectos</h2>
 
-  <div class="section">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>Python</li>
-      <li>React</li>
-      <li>SQL</li>
-      <li>Git</li>
-    </ul>
-  </div>
+  <h3>Dashboard de Inventario</h3>
+  <p>Aplicación web con Python y React</p>
+  <span class="badge">Data Analysis</span>
+  <span class="badge">ERP Integration</span>
 
-  <div class="section">
-    <h2>Proyectos</h2>
-    <ul>
-      <li>Dashboard de inventario (Python + React)</li>
-    </ul>
+</div>
+```
+
   </div>
 
 </div>
